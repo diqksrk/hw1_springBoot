@@ -1,0 +1,21 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /console
+
+  datasource:
+    url: jdbc:h2:~/test
+    driver-class-name: org.h2.Driver
+    data-username: sa
+    data-password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: H2
+#    generate-ddl: false
+#    open-in-view: false
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: validate
+#      naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
